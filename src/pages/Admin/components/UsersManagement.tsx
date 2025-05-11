@@ -32,7 +32,7 @@ const UsersManagement: React.FC = () => {
       const usersData = await getAllUsers();
       
       // Enhance user data with loan counts (in a real app this might come from the API)
-      const enhancedUsers = usersData.map(user => ({
+      const enhancedUsers = usersData.map((user: any) => ({
         ...user,
         totalLoans: Math.floor(Math.random() * 10), // This is just for mock data
         activeLoans: Math.floor(Math.random() * 5)  // This is just for mock data

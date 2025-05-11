@@ -1,13 +1,237 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* General dashboard styles */
+.user-dashboard {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dashboard-header button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-header button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Loading and error messages */
+.loading, .error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  color: #666;
+}
+
+.error-message {
+  color: #d9534f;
+}
+
+/* LoanApplicationForm styles */
+.loan-application-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-application-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.loan-application-form input,
+.loan-application-form select,
+.loan-application-form textarea {
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.loan-application-form button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loan-application-form button:hover {
+  background-color: #218838;
+}
+
+/* StatsOverview styles */
+.stats-overview {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stats-item {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 15px 25px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.stats-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.stats-item p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* LoansList styles */
+.loans-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loans-list th,
+.loans-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.loans-list th {
+  background-color: #007bff;
+  color: white;
+}
+
+.loans-list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.loans-list tr:hover {
+  background-color: #e9ecef;
+}
+
+.loans-list .status-approved {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.loans-list .status-pending {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.loans-list .status-rejected {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Loan Application Form Styles */
+.loan-application-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loan-application-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.loan-application-form input,
+.loan-application-form select,
+.loan-application-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.loan-application-form input:focus,
+.loan-application-form select:focus,
+.loan-application-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.loan-application-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+  padding:20px;
+  transition: background-color 0.3s ease;
+}
+
+.loan-application-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  color: #666666;
 }

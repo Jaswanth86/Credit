@@ -1,0 +1,77 @@
+
+.user-dashboard {
+  padding: 20px 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loan-details {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.loan-details-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.loan-details-label {
+  width: 200px;
+  font-weight: 500;
+}
+
+.loan-details-value {
+  flex: 1;
+}
+
+.loan-status-timeline {
+  margin-top: 30px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.timeline-connector {
+  width: 2px;
+  background-color: #ddd;
+  margin: 0 20px;
+  position: relative;
+}
+
+.timeline-connector::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-date {
+  color: #666;
+  font-size: 12px;
+}

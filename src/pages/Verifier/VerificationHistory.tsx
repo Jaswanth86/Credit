@@ -250,9 +250,9 @@ const VerificationHistory: React.FC = () => {
                   selected={endDate}
                   onChange={(date: Date | null) => setEndDate(date)}
                   selectsEnd
-                  startDate={startDate}
-                  endDate={endDate}
-                  minDate={startDate}
+                   startDate={startDate}
+                   endDate={endDate}
+                   minDate={startDate || undefined}
                   maxDate={new Date()}
                   placeholderText="Select end date"
                   className="date-picker"
