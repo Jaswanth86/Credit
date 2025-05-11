@@ -1,7 +1,7 @@
 // frontend/src/pages/Admin/Dashboard.tsx
 import React, { useEffect, useState } from 'react';
 import { getAdminStats, getAllLoans } from '../../services/api';
-import { AdminStats, Loan, LoanStatus } from '../../types';
+import { AdminStats, Loan } from '../../types';
 import AdminStatsOverview from './components/AdminStatsOverview';
 import LoansManagement from './components/LoansManagement';
 import UsersManagement from './components/UsersManagement';
