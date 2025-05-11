@@ -234,7 +234,7 @@ const VerificationHistory: React.FC = () => {
                 <label>Start Date:</label>
                 <DatePicker
                   selected={startDate}
-                  onChange={(date) => setStartDate(date)}
+                  onChange={(date: Date | null) => setStartDate(date)}
                   selectsStart
                   startDate={startDate}
                   endDate={endDate}
@@ -248,7 +248,7 @@ const VerificationHistory: React.FC = () => {
                 <label>End Date:</label>
                 <DatePicker
                   selected={endDate}
-                  onChange={(date) => setEndDate(date)}
+                  onChange={(date: Date | null) => setEndDate(date)}
                   selectsEnd
                   startDate={startDate}
                   endDate={endDate}
